@@ -1,0 +1,17 @@
+<h3>Modify Sketch</h3>
+
+<table>
+    <tr>
+        <td>Sketch Id</td>
+        <td>Sketch Cost</td>
+        <td>Sketch Name</td>
+    </tr>
+    <tr>
+        <td><input type="number" [(ngModel)]="sketch.sketchId"></td>
+        <td><input type="number" [(ngModel)]="sketch.sketchCost"></td>
+        <td><input type="text" [(ngModel)]="sketch.sketchName"></td>
+    </tr>
+    <tr>
+        <td><button (click)="localSketchModify()">Modify</button></td>
+    </tr>
+</table>

@@ -1,0 +1,14 @@
+<h2>Modify Friends</h2>
+<table border="1">
+    <tr>
+        <th>Friend Name</th>
+        <th>Friend Age</th>
+        <th>Friend City</th>
+    </tr>
+    <tr>
+        <td><input type="text" [(ngModel)]="modFriendname.friendName"></td>
+        <td><input type="number" [(ngModel)]="modFriendname.friendAge"></td>
+        <td><input type="text" [(ngModel)]="modFriendname.friendCity"></td>
+    </tr>
+    <button (click)="LocalModifyFrnd()">Modify Friend</button>
+</table>

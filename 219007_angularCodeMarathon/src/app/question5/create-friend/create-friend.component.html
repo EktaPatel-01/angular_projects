@@ -1,0 +1,14 @@
+<h2>Creating New Friend</h2>
+<table border="1">
+    <tr>
+        <th>Friend Name</th>
+        <th>Friend Age</th>
+        <th>Friend City</th>
+    </tr>
+    <tr>
+        <td><input type="text" [(ngModel)]="Newfriend.friendName"></td>
+        <td><input type="number" [(ngModel)]="Newfriend.friendAge"></td>
+        <td><input type="text" [(ngModel)]="Newfriend.friendCity"></td>
+    </tr>
+    <button (click)="LocalCreateNewFrnd()">Make new Friend</button>
+</table>

@@ -1,0 +1,22 @@
+h3{
+    color :blueviolet;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+div{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.body{
+    align-items: center;
+}
+button{
+    
+    color: wheat;
+    background-color: green;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}

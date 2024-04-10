@@ -1,0 +1,16 @@
+<div class="b">
+<button (click)="login()">Login</button>
+<button (click)="registration()">Registration</button>
+</div>
+
+<ng-template *ngIf="isUserLogin==false then ifBlock else elseBlock"></ng-template>
+<ng-template #ifBlock>
+    <app-registration></app-registration>
+</ng-template>
+<ng-template #elseBlock>
+    <app-login1></app-login1>
+</ng-template>
+
+<div class="a">
+<button>Submit</button>
+</div>

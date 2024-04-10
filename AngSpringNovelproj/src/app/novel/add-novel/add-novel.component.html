@@ -1,0 +1,22 @@
+<h1>Adding novel</h1>
+
+<table>
+    <tr>
+        <td>Novel Id</td>
+        <td>Novel title</td>
+        <td>Novel price</td>
+    </tr>
+    <tr>
+        <td><input type="number" [(ngModel)]="novel.novelId"></td>
+        <td><input type="text" [(ngModel)]="novel.novelName"></td>
+        <td><input type="number" [(ngModel)]="novel.noverPrice"></td>
+
+    </tr>
+    <tr>
+        <td>
+            <button (click)="localAddBook()">Add a Novel</button>
+            
+        </td>
+    </tr>
+</table>
+

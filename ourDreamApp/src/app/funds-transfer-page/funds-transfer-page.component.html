@@ -1,0 +1,65 @@
+<p>funds-transfer-page works!</p>
+<table border="3" cellspacing="5" cellpadding="5" >
+    <th>Acc Number</th><th>Acc Holder</th><th>Acc Balance</th>
+    <tr>
+    <td>{{bankAccountObj.accountNumber}}</td>
+    <td>{{bankAccountObj.accountHolder}}</td>
+    <td>{{bankAccountObj.accountBalance}}</td>
+    </tr>
+</table> 
+<br><br>
+<hr> <hr>
+<br><br>
+Source Account Array:
+<table border="3" cellspacing="5" cellpadding="5" >
+    <th>Acc Number</th><th>Acc Holder</th><th>Acc Balance</th>
+    <tr *ngFor="let x of bankAccountSourceArray">
+    <td>{{x.accountNumber}}</td>
+    <td>{{x.accountHolder}}</td>
+    <td>{{x.accountBalance}}</td></tr>
+</table>
+
+<hr> <hr>
+<br><br>
+Target Account Array:
+<table border="3" cellspacing="5" cellpadding="5" >
+    <th>Acc Number</th><th>Acc Holder</th><th>Acc Balance</th>
+    <tr *ngFor="let x of bankAccountTargetArray">
+    <td>{{x.accountNumber}}</td>
+    <td>{{x.accountHolder}}</td>
+    <td>{{x.accountBalance}}</td></tr>
+</table>
+
+<hr> <hr>
+<br><br>
+
+Source: <select [(ngModel)]="sourceAccountNumber" >                  <!--this is for drop down-->
+    <option *ngFor="let s of sourceAccounts">{{s}}</option>
+</select>
+Target: <select [(ngModel)]="targetAccountNumber" >
+    <option *ngFor="let t of targetAccounts">{{t}}</option>
+</select>
+<br> <br>
+Ammount: <input type="number"[(ngModel)]="amountToTransfer"> <br> <br><br>
+<hr>
+
+<button (click)="localTransferFunction()">Transfer</button>
+<!-- <button (click)="localTransferViaService()">Transfer with service</button> -->
+
+
+<!-- <table>
+    <tr *ngFor="let s of sourceAccounts">
+        <td>{{s}}</td>
+    </tr>
+</table>
+<br> <hr>
+<table>
+    <tr *ngFor="let t of targetAccounts">
+        <td>{{t}}</td>
+    </tr>
+</table> -->
+
+<!-- Enter Source account number <input type="number" [(ngModel)]="sourceAccountNumber"> <br>
+Enter Source account number <input type="number" [(ngModel)]="targetAccountNumber"> <br>
+Enter Source account number <input type="number" [(ngModel)]="amountToTransfer"> <br> -->
+

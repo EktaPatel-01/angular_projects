@@ -1,0 +1,19 @@
+.likeStl{
+
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: green;
+    font-size: large;
+    border-radius: 30px;
+    margin: 30px;
+}
+.dislikeStl{
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    font-size: large;
+    border-radius: 30px;
+    margin: 30px;
+}

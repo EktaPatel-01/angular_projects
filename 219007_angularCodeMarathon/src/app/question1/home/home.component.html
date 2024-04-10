@@ -1,0 +1,16 @@
+<h1>You can Login and Register Here </h1>
+
+<button (click)="login()" [disabled]="isUserLogIn">Login</button>
+<button (click)="register()" [disabled]="!isUserLogIn">Register</button>
+
+<ng-template *ngIf="isUserLogIn==true then ifBlock else elseBlock "></ng-template>
+
+    <ng-template #ifBlock>
+        <app-login-page></app-login-page>
+    </ng-template>
+
+    <ng-template #elseBlock>
+        <app-registration-page></app-registration-page>
+    </ng-template>
+
+

@@ -1,0 +1,42 @@
+<h1>Friend List Page</h1>
+
+
+<ul>
+    <li><a routerLink="/addfriend">Add A Friend</a></li>
+    <li><a routerLink="/modifyfriend">Modify A Friend</a></li>
+    <li><a routerLink="/viewfriend">View Friend</a></li>
+    <li><a routerLink="/showallfriends">View All Friends</a></li>
+</ul>
+
+
+
+<div>
+<h3>Find A Friend</h3>
+
+<table>
+    <tr>
+        <td>Enter user name</td>
+        <td><input type="text" [(ngModel)]="userName"></td>
+        <td><button (click)="findFriend()">Find</button></td>
+    </tr>
+</table>
+
+<table class="detailsTable" [cellPadding]="10" [cellSpacing]="10">
+    <tr>
+        <td>User Name</td>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Gender</td>
+        <td>City</td>
+    </tr>
+    <tr>
+        <td>{{friendObj.friendUserName}}</td>
+        <td>{{friendObj.friendName}}</td>
+        <td>{{friendObj.friendAge}}</td>
+        <td>{{friendObj.friendGender}}</td>
+        <td>{{friendObj.friendCity}}</td>
+    </tr>
+</table>
+</div>
+
+<router-outlet></router-outlet>

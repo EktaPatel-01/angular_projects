@@ -1,0 +1,14 @@
+<H2>Meet All My Friends</H2>
+
+<table border="1">
+    <tr>
+        <th>Friend Name</th>
+        <th>Friend Age</th>
+        <th>Friend City</th>
+    </tr>
+    <tr *ngFor ="let x of allMyfriends" >
+        <td>{{x.friendName}}</td>
+        <td>{{x.friendAge}}</td>
+        <td>{{x.friendCity}}</td>   
+    </tr>
+</table>

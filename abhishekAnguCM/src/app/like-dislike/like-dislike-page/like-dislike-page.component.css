@@ -1,0 +1,15 @@
+.headerStyle {
+    margin-top: 0;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.divStyle {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+}

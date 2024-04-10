@@ -1,0 +1,20 @@
+<p>like-dislike works!</p>
+<br>
+<button
+    (click)="increaseLikes()"
+    [ngClass]="likeButton">  <!--this is for style -->
+    {{likeLabel}}
+    {{likeCount}}
+</button>
+
+
+<button
+    (click)="increaseDislikes()"
+    [ngClass]="dislikeButton">
+    {{dislikeLabel}}
+    {{dislikeCount}}
+</button>
+
+
+
+

@@ -1,0 +1,64 @@
+.headerStyle {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.tableDiv {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(230, 231, 230);
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px 2px rgb(161, 161, 238);
+}
+
+.accountTable {
+    border: 2px solid black;
+    width: 45%;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(208, 238, 228);
+}
+
+.serviceTable{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(204, 253, 237);
+
+}
+
+.serviceTable input:hover{
+    border: 2px solid orange;
+}
+
+
+.serviceTable button {
+    padding: 5px;
+    background-color: beige;
+    border-radius: 5px;
+    border:1px solid black;
+    margin-top: 10px;
+}
+
+.serviceTable button:hover {
+    
+    background-color: rgb(243, 243, 145);
+    cursor: pointer;
+}
+.accountTable td {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+}
+
+tr {
+}

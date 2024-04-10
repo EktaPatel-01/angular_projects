@@ -1,0 +1,19 @@
+.headerStyle {
+    color: rgb(9, 132, 189);
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 5px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.formTable {
+    margin: auto;
+    margin-top: 20px;
+}
+
+td {
+    padding: 10px;
+}

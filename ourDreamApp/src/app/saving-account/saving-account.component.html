@@ -1,0 +1,23 @@
+<p>saving-account works!</p>
+
+<table border="3" cellspacing="5" cellpadding="5" >
+    <th>Acc Number</th><th>Acc Holder</th><th>Acc Balance</th>
+    <tr>
+    <td>{{savingAccountObj.accountNumber}}</td>
+    <td>{{savingAccountObj.accountHolder}}</td>
+    <td>{{savingAccountObj.accountBalance}}</td>
+    </tr>
+</table> 
+<br><br> 
+
+Source: <select [(ngModel)]="sourceAccountNumber" >                  <!--this is for drop down -->
+    <option *ngFor="let s of sourceAccounts">{{s}}</option>
+</select>
+Target: <select [(ngModel)]="targetAccountNumber" >
+    <option *ngFor="let t of targetAccounts">{{t}}</option>
+</select>
+<br> <br>
+Ammount: <input type="number"[(ngModel)]="amountToTransfer"> <br> <br><br>
+<hr> 
+
+<button >Transfer</button>

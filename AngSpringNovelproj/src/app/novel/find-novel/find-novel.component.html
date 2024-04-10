@@ -1,0 +1,18 @@
+<h2>Searching a Novel</h2>
+
+Enter Novel Id:
+<input type="number" [(ngModel)]="novelId">
+
+<table>
+    <tr>
+        <td>{{novel.novelId}}</td>
+        <td>{{novel.novelName}}</td>
+        <td>{{novel.noverPrice}}</td>
+
+    </tr>
+    <tr>
+        <td>
+            <button (click)="LocalFindNovel()">Search</button>
+        </td>
+    </tr>
+</table>

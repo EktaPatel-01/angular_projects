@@ -1,0 +1,20 @@
+<h2>Meet Single friend</h2>
+
+
+Enter Friend name: <input type="text" [(ngModel)]="searchingFrnd">
+<button (click)="LocalViewFrnd()">Find this Friend</button>
+
+<table *ngIf="found!=null" border="1">
+    <tr>
+        <th>Friend Name</th>
+        <th>Friend Age</th>
+        <th>Friend City</th>
+    </tr>
+    <tr>
+        <td><input type="text" [(ngModel)]="found.friendName"></td>
+        <td><input type="number" [(ngModel)]="found.friendAge"></td>
+        <td><input type="text" [(ngModel)]="found.friendCity"></td>
+        
+    </tr>
+</table>
+

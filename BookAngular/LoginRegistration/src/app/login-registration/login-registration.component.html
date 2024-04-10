@@ -1,0 +1,39 @@
+<h1>User Login Registration Form</h1>
+
+<!-- <input type="button" (click)="loginMe()"[(ngModel)]="buttonLabel"><br> <br> -->
+
+<button (click)="loginMe()" style="background-color: gold; color: black; border-radius: 10%;">{{buttonLabel}}</button>
+
+    <div *ngIf="isUserLogIn then myThenBlock else myElseBlock"></div>
+    <ng-template #myThenBlock>
+        <h3>User Login Form </h3> <br>
+        <div>
+            Enter Email id:
+            <input type="email"><br><br>
+            Enter Password
+            <input type="password">
+        </div>
+    </ng-template>
+
+    <ng-template #myElseBlock>
+        <h3>User Registration form </h3> <br>
+
+        <div>
+            Enter Name:
+            <input type="text" [(ngModel)]="name"> <br><br>
+            Enter Email id:
+            <input type="email"  [(ngModel)]="email"><br><br>
+            Enter Location:
+            <input type="text" [(ngModel)]="location" ><br><br>
+            Enter phone number:
+            <input type="text" [(ngModel)]="mobNumber" ><br><br>
+            Create Password:
+            <input type="password" [(ngModel)]="password" >
+        </div>
+    </ng-template> <br><br><br>
+<h3>Username {{name}}</h3>
+<h3>Email {{email}}</h3>
+<h3>Location {{location}}</h3>
+<h3>Mobile Number {{mobNumber}}</h3>
+<h3>Password {{password}}</h3>
+<button >Submit</button>

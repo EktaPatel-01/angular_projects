@@ -1,0 +1,35 @@
+.headerStyle {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.formDiv {
+    /* display: flex; */
+    margin: auto;
+    width: 30%;
+    /* justify-content: center; */
+    padding: 20px;
+    padding-top: 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 2px rgb(173, 173, 173);
+    background-color: beige;
+}
+
+.buttonDiv {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+button:hover{
+    background-color: rgb(221, 219, 219);
+}
