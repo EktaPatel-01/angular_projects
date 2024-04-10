@@ -1,0 +1,16 @@
+<h1>Find a book</h1>
+
+<input type="number" [(ngModel)]="bookId" placeholder="Enter book id">
+<table>
+    <tr>
+        <td>{{book.bookId}}</td>
+        <td>{{book.bookTitle}}</td>
+        <td>{{book.bookAuthor}}</td>
+        <td>{{book.bookPrice}}</td>
+    </tr>
+    <tr>
+        <td>
+            <button (click)="find()">Find a book</button>
+        </td>
+    </tr>
+</table>

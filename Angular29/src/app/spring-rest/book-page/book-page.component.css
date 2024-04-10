@@ -1,0 +1,17 @@
+ul {
+    display: flex;
+    background-color:khaki;
+    justify-content: space-around;
+}
+
+li {
+    padding: 10px;
+    list-style: none;
+}
+a {
+    margin: 10px;
+    color:orange;
+    padding: 10px;
+    background-color: black;
+    text-decoration: none;
+}

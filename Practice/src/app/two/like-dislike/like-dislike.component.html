@@ -1,0 +1,11 @@
+<h1>Like Dislike Buttons</h1>
+
+<button (click)="likeIncrease()" [ngClass]="likeStyle">
+    {{likeLabel}}  {{LikeCount}}
+    <!-- <img src="..\assets\images\like_img.jpg" width="100px" height="50px"> -->
+</button>
+<button (click)="dislikeIncrease()" [ngClass]="dislikeStyle">
+    {{dislikeLabel}}  {{DislikeCount}}
+    <!-- <img src="..\assets\images\dislike_img.png" width="100px" height="50px"> -->
+
+</button>

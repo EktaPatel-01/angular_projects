@@ -1,0 +1,71 @@
+<p>fund-transfer works!</p>
+
+<table border="1">
+    <th>AccNumber</th> <th>AccHolder</th><th>AccBalance</th>
+    <tr>
+        <td> {{bankObj.accNumber}} </td>
+        <td> {{bankObj.accHolder}} </td>
+        <td> {{bankObj.accbalance}} </td>
+    </tr>
+</table>
+<table border="1">
+    <th>AccNumber</th> <th>AccHolder</th><th>AccBalance</th>
+    <tr>
+        <td> {{bankObj1.accNumber}} </td>
+        <td> {{bankObj1.accHolder}} </td>
+        <td> {{bankObj1.accbalance}} </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td>Amount to Transfer:</td>
+        
+        <td><input type="number" [(ngModel)]="amtToTrans"></td>
+        <td><button (click)="transfer()">Transfer</button></td>
+        <td><button (click)="transferViaService()">Transfer via service</button></td>
+        
+    </tr>
+    <td> {{message}} </td>
+</table>
+
+
+
+
+
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<!-- 
+Source Account Table:
+<table border="1">
+    <th>AccNumber</th> <th>AccHolder</th> <th>AccBalance</th>
+    <tr *ngFor="let x of bnkAccSrcArray">
+        <td>  {{x.accNumber}} </td>
+        <td>  {{x.accHolder}} </td>
+        <td>  {{x.accbalance}} </td>
+    </tr>
+</table> <br> <br><br>
+
+Target Account Table:
+<table border="1">
+    <th>AccNumber</th> <th>AccHolder</th> <th>AccBalance</th>
+    <tr *ngFor="let x of bnkAccTrgArray">
+        <td>  {{x.accNumber}} </td>
+        <td>  {{x.accHolder}} </td>
+        <td>  {{x.accbalance}} </td>
+    </tr>
+</table> <br> <br> <br>
+
+Source Account Number:
+    <select [ngModel]="srcAccNum">
+        <option *ngFor="let s of srcAccounts">{{s}}</option>
+    </select>
+
+Target Account Number:
+    <select [ngModel]="trgAccNum">
+        <option *ngFor="let t of trgAccounts"> {{t}} </option>
+    </select>
+
+Amount To Transfer:
+    <input type="number" [ngModel]="amtToTrans">
+
+<button (click)="transfer()">Transfer</button> -->

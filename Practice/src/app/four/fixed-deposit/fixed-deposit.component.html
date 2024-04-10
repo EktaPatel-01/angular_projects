@@ -1,0 +1,24 @@
+<h2>source Table</h2>
+
+<table border="1">
+    <th>AccNumber</th><th>AccHolder</th><th>AccBalance</th>
+    <tr>
+        <td>{{fdObj.accNumber}}</td>
+        <td>{{fdObj.accHolder}}</td>
+        <td>{{fdObj.accBalance}}</td>
+    </tr>
+</table>
+
+<h2>target table</h2>
+
+<table border="1">
+    <th>AccNumber</th><th>AccHolder</th><th>AccBalance</th>
+    <tr>
+        <td>{{fdObj2.accNumber}}</td>
+        <td>{{fdObj2.accHolder}}</td>
+        <td>{{fdObj2.accBalance}}</td>
+    </tr>
+</table>
+
+<input type="number" [(ngModel)]="amtToTransfer">
+<button (click)="transfer()">Transfer</button>

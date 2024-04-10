@@ -1,0 +1,27 @@
+<h3 >Registration Page</h3>
+
+<table>
+    <tr>
+        <td>Enter userName:  </td>
+        <td><input type="text" [(ngModel)]="username"></td>
+    </tr>
+    <tr>
+        <td>Enter Email id: </td>
+        <td> <input type="email" [(ngModel)]="email"></td>
+    </tr>
+    <tr>
+        <td>Enter Phone Number: </td>
+        <td> <input type="number" [(ngModel)]="phone"></td>
+    </tr>
+    <tr>
+        <td>Enter Address: </td>
+        <td> <input type="text" [(ngModel)]="address"></td>
+    </tr>
+    <tr>
+        <td>Create Password: </td>
+        <td> <input type="text" [(ngModel)]="password"></td>
+    </tr>
+
+    <button (click)="register()">Submit</button>
+</table>
+

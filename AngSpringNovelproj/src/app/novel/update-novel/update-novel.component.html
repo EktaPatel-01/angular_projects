@@ -1,0 +1,17 @@
+<h2>Updating Novel</h2>
+
+<table>
+    <tr>
+        <td>Novel id</td>
+        <td>New Novel name</td>
+        <td>New Novel price</td>
+    </tr>
+    <tr>
+        <td><input type="number" [(ngModel)]="novel.novelId"></td>
+        <td><input type="text" [(ngModel)]="novel.novelName"></td>
+        <td><input type="number" [(ngModel)]="novel.noverPrice"></td>
+    </tr>
+    <td>
+        <button (click)="updateNovel()">Update</button>
+    </td>
+</table>

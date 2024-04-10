@@ -1,0 +1,25 @@
+<h2>Funds Transfer Service</h2>
+
+<table border="1" [cellPadding]="3" [cellSpacing]="2">
+    <th>Account Number</th> <th>Account HolderName</th> <th>Account Balance</th>
+    <tr>
+        <td>{{obj1.accountNumber}}</td>
+        <td>{{obj1.accountHolder}}</td>
+        <td>{{obj1.accountBalance}}</td>
+    </tr>
+</table>
+<br><hr><br>
+<table border="1">
+    <th>Account Number</th> <th>Account HolderName</th> <th>Account Balance</th>
+    <tr>
+        <td>{{obj2.accountNumber}}</td>
+        <td>{{obj2.accountHolder}}</td>
+        <td>{{obj2.accountBalance}}</td>
+    </tr>
+</table>
+<br><br>
+    Enter amount to Transfer:
+    <input type="number" [(ngModel)]="amtToTransfer">
+
+    <button (click)="localTransfer()">Transfer</button>
+

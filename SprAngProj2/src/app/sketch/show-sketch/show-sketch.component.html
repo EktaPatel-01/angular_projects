@@ -1,0 +1,15 @@
+<h3>Searching Sketch</h3>
+
+Enter sketchId:
+<input type="number" [(ngModel)]="sketchId">
+
+<table>
+    <tr>
+        <td>{{sketch.sketchId}}</td>
+        <td>{{sketch.sketchName}}</td>
+        <td>{{sketch.sketchCost}}</td>
+    </tr>
+    <tr>
+        <td><button (click)="localShowSketch()">Search</button></td>
+    </tr>
+</table>

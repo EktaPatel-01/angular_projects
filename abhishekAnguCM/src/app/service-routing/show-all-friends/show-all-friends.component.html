@@ -1,0 +1,34 @@
+<h1>Friend List Page</h1>
+
+
+<ul>
+    <li><a routerLink="/addfriend">Add A Friend</a></li>
+    <li><a routerLink="/modifyfriend">Modify A Friend</a></li>
+    <li><a routerLink="/viewfriend">View Friend</a></li>
+    <li><a routerLink="/showallfriends">View All Friends</a></li>
+</ul>
+
+
+
+<div>
+<h3>Friends List</h3>
+
+<table [cellSpacing]="10" [cellPadding]="10">
+    <tr>
+        <td>User Name</td>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Gender</td>
+        <td>City</td>
+    </tr>
+    <tr *ngFor="let friend of friends">
+        <td>{{friend.friendUserName}}</td>
+        <td>{{friend.friendName}}</td>
+        <td>{{friend.friendAge}}</td>
+        <td>{{friend.friendGender}}</td>
+        <td>{{friend.friendCity}}</td>
+    </tr>
+</table>
+</div>
+
+<router-outlet></router-outlet>

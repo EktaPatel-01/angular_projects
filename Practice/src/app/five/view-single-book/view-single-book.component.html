@@ -1,0 +1,19 @@
+<h2>Finding single book</h2>
+
+Enter Book id: <input type="number" [(ngModel)]="bookIdToSearch">
+<button (click)="localViewBook()">Find this book</button>
+
+<table *ngIf="found!=undefined" border="1">
+    <tr>
+        <th>Book Id</th>
+        <th>Book Title</th>
+        <th>Book Author</th>
+        <th>Book Price</th>
+    </tr>
+    <tr>
+        <td><input type="number" [(ngModel)]="found.bookId"></td>
+        <td><input type="text" [(ngModel)]="found.bookName"></td>
+        <td><input type="text" [(ngModel)]="found.bookAuthor"></td>
+        <td><input type="number" [(ngModel)]="found.bookPrice"></td>
+    </tr>
+</table>

@@ -1,0 +1,12 @@
+<h3>Showing all Sketches</h3>
+
+<table>
+    <tr *ngFor="let sketch of sketchList">
+        <td>{{sketch.sketchId}}</td>
+        <td>{{sketch.sketchName}}</td>
+        <td>{{sketch.sketchCost}}</td>
+    </tr>
+    <tr>
+        <td><button (click)="localShowAllSketch()">Show</button></td>
+    </tr>
+</table>

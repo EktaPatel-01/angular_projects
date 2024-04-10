@@ -1,0 +1,24 @@
+<h1 class="headerStyle">Login & Registration Form</h1>
+
+<div class="formDiv">
+
+    <!-- based on the value of isUserLoggedIn, the login and register form should be displayed -->
+    <ng-template *ngIf="isUserLoggedIn == false then ifBlock else elseBlock"></ng-template>
+
+    <!-- if ngIf evalutes to true then ifBlock will be loaded -->
+    <ng-template #ifBlock>
+        <app-login-form></app-login-form>
+    </ng-template>
+
+    <!-- if ngIf evalutes to false then elseBlock will be loaded -->
+    <ng-template #elseBlock>
+        <app-registration-form></app-registration-form>
+    </ng-template>
+
+    <div class="buttonDiv">
+        <!-- login button -->
+        <button (click)="login()" [hidden]="isUserLoggedIn">Login</button>
+        <!-- register button -->
+        <button (click)="register()" [hidden]="!isUserLoggedIn">Register</button>
+    </div>
+</div>

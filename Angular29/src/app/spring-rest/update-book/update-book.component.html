@@ -1,0 +1,20 @@
+<p>update-book works!</p>
+<table>
+    <tr>
+        <td>Book id</td>
+        <td>New Book title</td>
+        <td>New Book author</td>
+        <td>New Book price</td>
+    </tr>
+    <tr>
+        <td><input type="number" [(ngModel)]="book.bookId"></td>
+        <td><input type="text" [(ngModel)]="book.bookTitle"></td>
+        <td><input type="text" [(ngModel)]="book.bookAuthor"></td>
+        <td><input type="number" [(ngModel)]="book.bookPrice"></td>
+    </tr>
+    <tr>
+        <td>
+            <button (click)="updateBook()">Add a book</button>
+        </td>
+    </tr>
+</table>

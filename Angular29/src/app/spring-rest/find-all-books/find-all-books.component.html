@@ -1,0 +1,14 @@
+<h1>Find all book</h1>
+
+
+<table>
+    <tr *ngFor="let book of bookList">
+        <td>{{book.bookId}}</td>
+        <td>{{book.bookTitle}}</td>
+        <td>{{book.bookAuthor}}</td>
+        <td>{{book.bookPrice}}</td>
+    </tr>
+    <tr>
+        <td><button (click)="findAll()">Find all books</button></td>
+    </tr>
+</table>

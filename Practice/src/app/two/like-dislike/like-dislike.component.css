@@ -1,0 +1,12 @@
+.likeStyling{
+   color: white;
+   height: 50px;
+   width: 100px;
+   background-color: green;
+}
+.DislikeStyling{
+    color: white;
+    height: 50px;
+    width: 100px;
+    background-color: red;
+ }

@@ -1,0 +1,18 @@
+<p>switch works!</p>
+
+<div [ngSwitch]="num">
+    <div  *ngSwitchCase="'1'">one is selected</div>
+    <div  *ngSwitchCase="'2'">two is selected</div>
+    <div  *ngSwitchCase="'3'">three is selected</div>
+    <div  *ngSwitchCase="'4'">four is selected</div>
+    <div  *ngSwitchCase="'5'">five is selected</div>
+</div>
+
+Enter value <input type="number" [(ngModel)]="num">
+<div [ngSwitch]="num">
+    <div  *ngSwitchCase="'1'">one is selected</div>
+    <div  *ngSwitchCase="'2'">two is selected</div>
+    <div  *ngSwitchCase="'3'">three is selected</div>
+    <div  *ngSwitchCase="'4'">four is selected</div>
+    <div  *ngSwitchCase="'5'">five is selected</div>
+</div>

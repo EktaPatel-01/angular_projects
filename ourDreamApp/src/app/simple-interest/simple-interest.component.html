@@ -1,0 +1,36 @@
+<p>simple-interest works!</p> <br>
+<div class="sp">
+Enter Principle Amount <input type="text"  value="{{p}}"><br>
+Enter number of years  <input type="number"  value="{{n}}"> <br>
+Enter rate of Interest  <input type="number"  value="{{r}}"> <br>
+
+</div>
+<button (click)="calculateSI()">Calculate Simple Interest </button>
+
+<br> Simple Interest is : {{si}}
+
+<hr>
+<p>simple-interest works!</p> <br>
+<div class="sp">
+Enter Principle Amount <input type="text"  [value]="p"><br>
+Enter number of years  <input type="number"  [value]="n"> <br>
+Enter rate of Interest  <input type="number"  [value]="r"> <br>
+
+</div>
+<button (click)="calculateSI()">Calculate Simple Interest </button>
+
+<br> Simple Interest is : {{si}}
+
+<hr>
+<p>simple-interest works!</p> <br>
+<div class="sp">
+Enter Principle Amount <input type="text"  [(ngModel)]="p" (input)="calculateSI()"><br>
+Enter number of years  <input type="number"  [(ngModel)]="n" (input)="calculateSI()"> <br>
+Enter rate of Interest  <input type="number"  [(ngModel)]="r" (input)="calculateSI()"> <br>
+
+</div>
+<button (click)="calculateSI()">Calculate Simple Interest </button>
+
+<br> Simple Interest is : {{si}}
+
+<hr>

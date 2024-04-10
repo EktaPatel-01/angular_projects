@@ -1,0 +1,22 @@
+<p>condition works!</p>
+
+<br>Enter Age:  <input type="number" [(ngModel)]="myAge">
+
+<input type="button" (click)="loginMe()"[(ngModel)]="buttonLabel"><br>
+<div *ngIf="isUserLogIn; then myThenBlock else myElseBlock"></div>
+<ng-template #myThenBlock>User Looged In</ng-template>
+<ng-template #myElseBlock>User Looged Out</ng-template>
+
+<!-- 
+<div *ngIf="myAge<0;then thenblock else myFirstElseBlock"></div>
+
+<ng-template #thenblock>Age is Negative</ng-template>
+<ng-template #myFirstElseBlock>
+    <div *ngIf="myAge >=0 && myAge<=100; else anotherElseBlock">
+        Valid Human Age
+    </div>
+
+</ng-template>
+<ng-template #anotherElseBlock>
+    Human age must be between 1 to 100
+</ng-template> -->

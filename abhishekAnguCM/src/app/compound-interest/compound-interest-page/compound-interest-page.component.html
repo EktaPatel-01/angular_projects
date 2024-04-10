@@ -1,0 +1,32 @@
+<h1 class="headerStyle">Compound Interest Calculator</h1>
+<div class="tableDiv">
+    <table class="calculatorTable">
+        <tr>
+            <td>Principal amount</td>
+            <td><input type="number" [(ngModel)]="principal"></td>
+        </tr>
+        <tr>
+            <td>Rate of interest</td>
+            <td><input type="number" [(ngModel)]="rateOfInterest"></td>
+        </tr>
+        <tr>
+            <td>Number of times interest is compounded</td>
+            <td><input type="number" [(ngModel)]="compoundingFrequency"></td>
+        </tr>
+        <tr>
+            <td>Time period (in years)</td>
+            <td><input type="number" [(ngModel)]="timePeriod"></td>
+        </tr>
+
+    </table>
+    <table class="calculatorTable">
+        <tr>
+            <td>
+                <span>Compound Interest is {{principal | compoundInterest:rateOfInterest :compoundingFrequency
+                    :timePeriod |
+                    currency:'INR'}}</span>
+            </td>
+        </tr>
+
+    </table>
+</div>

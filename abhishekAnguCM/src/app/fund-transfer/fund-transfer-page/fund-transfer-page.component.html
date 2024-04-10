@@ -1,0 +1,45 @@
+<h1 class="headerStyle">Fund Transfer Service</h1>
+<div class="tableDiv">
+    <table [cellPadding]="6" class="accountTable">
+        <th>Source Account Details</th>
+        <tr>
+            <td>Account Number</td>
+            <td>Account Holder Name</td>
+            <td>Account Balance</td>
+        </tr>
+        <tr>
+            <td>{{accounts[0].accNo}}</td>
+            <td>{{accounts[0].accHolderName}}</td>
+            <td>{{accounts[0].accBalance | currency:'INR'}}</td>
+        </tr>
+    </table>
+    
+    <table [cellPadding]="6" class="accountTable">
+        <th>Target Account Details</th>
+        <tr>
+            <td>Account Number</td>
+            <td>Account Holder Name</td>
+            <td>Account Balance</td>
+        </tr>
+        <tr>
+            <td>{{accounts[1].accNo}}</td>
+            <td>{{accounts[1].accHolderName}}</td>
+            <td>{{accounts[1].accBalance | currency:'INR'}}</td>
+        </tr>
+    </table>
+    <table class="serviceTable">
+        <th>Transfer Utility</th>
+        <tr>
+            <td>Sender Account Number</td><td> <input type="number" placeholder="Source account number" [(ngModel)]="sourceAccountNumber"></td>
+        </tr>
+        <tr>
+            <td>Receiver Account Number</td><td><input type="number" placeholder="Target account number" [(ngModel)]="targetAccountNumber"></td>
+        </tr>
+        <tr>
+            <td>Amount To Transfer</td><td><input type="number" placeholder="Amount to transfer" [(ngModel)]="amountToTransfer"></td>
+        </tr>
+        <tr>
+            <button (click)="transferFunds()">Transfer</button>
+        </tr>
+    </table>
+</div>

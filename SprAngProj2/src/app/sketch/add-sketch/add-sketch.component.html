@@ -1,0 +1,21 @@
+<p>add-sketch works!</p>
+<h3>Adding Sketch</h3>
+
+<table>
+    <tr>
+        <td>Sketch Id</td>
+        <td>Sketch Name</td>
+        <td>Sketch cost</td>
+    </tr>
+    <tr>
+        <td><input type="number" [(ngModel)]="sketch.sketchId"></td>
+        <td><input type="text" [(ngModel)]="sketch.sketchName"></td>
+        <td><input type="number" [(ngModel)]="sketch.sketchCost"></td>
+
+    </tr>
+    <tr>
+        <td>
+            <button (click)="localAddSketch()">Add a sketch</button>
+        </td>
+    </tr>
+</table>

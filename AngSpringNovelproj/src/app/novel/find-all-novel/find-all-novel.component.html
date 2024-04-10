@@ -1,0 +1,14 @@
+<h1>Find all book</h1>
+
+
+<table>
+    <tr *ngFor="let novel of novelList">
+        <td>{{novel.novelId}}</td>
+        <td>{{novel.novelName}}</td>
+        <td>{{novel.noverPrice}}</td>
+
+    </tr>
+    <tr>
+        <td><button (click)="LocalAllNovels()">Find all Novel</button></td>
+    </tr>
+</table>
